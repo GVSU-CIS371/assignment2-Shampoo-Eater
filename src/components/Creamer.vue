@@ -4,7 +4,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { currentCreamer } from "../stores/beverage";
+</script>
 <style lang="scss" scoped>
 .froth {
   overflow: visible;
@@ -17,7 +19,8 @@
 }
 .foam {
   display: block;
-  background: #e4e0d2;
+  //background: #e4e0d2;
+  background: v-bind("currentCreamer.color");
   border-radius: 30px;
   height: 40px;
   width: 40px;

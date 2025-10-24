@@ -23,7 +23,7 @@
               type="radio"
               name="base"
               :id="`r${base.id}`"
-              :value="base.id"
+              :value="base"
               v-model="currentBase"
             />
             {{ base.name }}
@@ -37,7 +37,7 @@
               type="radio" 
               name="creamer" 
               :id="`r${creamer.id}`" 
-              :value="creamer.id" 
+              :value="creamer" 
               v-model="currentCreamer"
             />
             {{ creamer.name }}
@@ -50,7 +50,7 @@
             <input type="radio" 
               name="syrup" 
               :id="`r${syrup.id}`" 
-              :value="syrup.id" 
+              :value="syrup" 
               v-model="currentSyrup"
             />
             {{ syrup.name }}
